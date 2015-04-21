@@ -1,0 +1,224 @@
+// .container {
+//     // @extend %center-element-horiz;
+//     // @include transition(opacity 0.2s ease-in-out 0);
+//     // @include transform(scaleX(-1));
+//     // background: url('../../images/screens/welcome.png') center 25px no-repeat;
+//     // background-size: 475px auto;
+//     width: 100%;
+//     height: 100%;
+//     padding: 0;
+//     margin: 0 auto;
+//     // overflow: hidden;
+// }
+
+.eggplant-cursor {
+    width: 100px;
+    height: 165px;
+    background: url('../../images/eggplant-cursor.png') center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -100px;
+    top: -165px;
+    z-index: 1000;
+}
+
+.main-content {
+    // width: 100%;
+    // margin: 0 auto;
+    text-align: center;
+    // padding: 50px;
+}
+
+.questions-list {
+
+    li {
+        position: relative;
+
+        &.active {
+            .q-text {
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            @include transition(opacity 0.3s ease-in-out 0);
+            cursor: pointer;
+            .q-text {
+                opacity: 1;
+            }
+            // opacity: 0.8;
+        }
+
+        &:before {
+            @include transition(background-color 0.3s ease-in-out 0);
+            content: '';
+            display: block;
+            height: 100%;
+            width: 20px;
+            background-color: transparent;
+            // opacity: 0.2;
+            position: absolute;
+        }
+
+        &:nth-child(3n) {
+            background-color: $pink;
+            &:hover {
+                background-color: shade($pink, 20%);
+                // cursor: pointer;
+                &:before {
+                    background-color: $purple;
+                }
+            }
+
+        }
+        &:nth-child(3n+1) {
+            background-color: $purple;
+            &:hover {
+                background-color: shade($purple, 20%);
+                // cursor: pointer;
+                &:before {
+                    background-color: $green;
+                }
+            }
+
+        }
+        &:nth-child(3n+2) {
+            background-color: $green;
+            &:hover {
+                background-color: shade($green, 20%);
+                // cursor: pointer;
+                &:before {
+                    background-color: $pink;
+                }
+            }
+
+        }
+
+        .q-text {
+            @include transition(opacity 0.3s ease-in-out 0);
+            padding: 30px 50px;//50px;// 75px;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            opacity: 0.2;
+        }
+
+    }
+}
+
+.back-to-top {
+    // @include transition(opacity 0.2s ease-in-out 0);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    color: #fff;
+    background: $blue;
+    border: 5px solid #fff;
+    padding: 5px 10px;
+    font-size: 24px;
+    // text-transform: uppercase;
+    &:hover {
+        @include transition(opacity 0.2s ease-in-out 0);
+        cursor: pointer;
+        // background: #fff;
+        // color: $blue;
+        // border: 5px solid $blue;
+        opacity: 0.5;
+    }
+}
+
+// .panel {
+//     // @include vertical-align(50%);
+//     background-color: #fff;
+//     color: #000;
+//     width: 100%;
+//     padding: 40px;
+//     max-width: 960px;
+//     margin: 0 auto;
+//     text-align: left;
+//     position: relative;
+
+//     &:not(:last-child) {
+//         margin-bottom: 30px;
+//     }
+
+// }
+
+
+.center-panel {
+    // @extend %center-element-horiz;
+    // @include vertical-align(50%);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+    &.one {
+        background: $purple;
+    }
+    &.two {
+        top: 100%;
+        background: $green;
+        // height: 100%;
+    }
+    &.three {
+        top: 200%;
+        background: $pink;
+        // height: 100%;
+    }
+    &.four {
+        top: 300%;
+        background: $purple;
+        // height: 100%;
+    }
+
+}
+
+.down-arrow {
+    @extend %center-element-horiz;
+    display: block;
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 1;
+    text-transform: uppercase;
+    opacity: 0.2;
+    bottom: 10px;
+    a {
+        @include transform(rotate(90deg));
+        background: black;
+        width: 100%;
+        height: 100px;
+        // position: absolute;
+        // bottom: 0;
+        // left: 0;
+    }
+    // height: 100%;
+    // width: 100%;
+
+}
+
+.center-text {
+    // @extend %center-element-horiz;
+    @include vertical-align(50%);
+    // position: absolute;
+    // height: 100%;
+    // background-color: red;
+}
+
+.main-text {
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 1;
+    text-transform: uppercase;
+    opacity: 0.2;
+
+}
