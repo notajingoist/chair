@@ -842,6 +842,16 @@ header {
             font-weight: 400;
             // font-style: italic;
             letter-spacing: 2.5px;
+
+            a {
+                border-bottom: 1px solid transparent;
+                @include transition(border-bottom 0.2s ease-in-out);
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 1px solid $white;
+                    //opacity: 0.9;
+                }
+            }
         }
 
         p {
