@@ -14,7 +14,7 @@ body {
     // position: relative;
     height: 100%;
 
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Playfair Display', 'Source Sans Pro', sans-serif;
     color: #000;
     line-height: 1.2;
     letter-spacing: 1px;
@@ -26,12 +26,16 @@ body {
 }
 
 a {
-    @include transition(all 0.2s ease-in-out 0);
+    @include transition(all 0.2s ease-in-out);
     text-decoration: none;
     color: inherit;
     // color: #000;
+    // padding-bottom: 3px;
+    // border-bottom: 1px solid $white;
     &:hover {
         cursor: pointer;
+        // color: $black;
+        // border-color: $black;
     }
 }
 
@@ -61,7 +65,7 @@ input, select, textarea, button {
 }
 
 ::selection {
-    background: $yellow;
+    background: #ccc;
 }
 
 ::-moz-selection {

@@ -19,17 +19,43 @@ app.set('view engine', 'jade');
 // home
 app.get('/', function(req, res) {
     res.render('index', {
-        title: 'Eggplant Day',
-        cursor: 'eggplant',
-        home: 'active'
+        title: 'Chair',
+        home: 'active',
+        navHide: 'hide'
     });
 });
 
-// questionnaire
-app.get('/questionnaire', function(req, res) {
-    res.render('questionnaire', {
-        title: 'Eggplant Day',
-        cursor: 'default',
-        home: 'active'
+// products
+app.get('/products', function(req, res) {
+    res.render('products', {
+        title: 'Products',
+        products: 'active'
+    });
+});
+
+
+// our story
+app.get('/our-story', function(req, res) {
+    res.render('our-story', {
+        title: 'Our Story',
+        ourStory: 'active'
+    });
+});
+
+
+// their story
+app.get('/their-story', function(req, res) {
+    res.render('their-story', {
+        title: 'Their Stories',
+        theirStory: 'active'
+    });
+});
+
+
+// press
+app.get('/press', function(req, res) {
+    res.render('press', {
+        title: 'Press',
+        press: 'active'
     });
 });

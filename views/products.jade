@@ -1,0 +1,154 @@
+extend layout
+block content
+    div(class='main-content products-content')
+        div(id='eh15-title', class='center-panel one')
+            div(class='center-text')
+                div(class='main-text')
+                    h2(class='main')
+                        a(href='#eh15-shop').
+                            eh15
+                    a(href='#eh15-story')
+                        div(class='button button-left').
+                            The Story
+                    a(href='#eh15-process')
+                        div(class='button button-right').
+                            The Process
+            div(class='down-arrow')
+                a(href='#eh15-shop').
+                    ▿
+        div(id='eh15-shop', class='center-panel two')
+            div(class='content-feature')
+                div(class='feature feature-left')
+                    div(class='feature-img')
+                        img(id='chair-preview', src='images/teak-chrome.png')
+                    div(class='thumbs')
+                        div(class='thumb', id='thumb-default')
+                        div(class='thumb', id='thumb-ottoman')
+                        div(class='thumb', id='thumb-elevation')
+                        div(class='thumb', id='thumb-front')
+                div(class='feature feature-right')
+                    form
+                        div(class='swatches')
+                            div(class='wood-swatches')
+                                h3.
+                                    Wood
+                                div(class='swatch swatch-wood', id='ash')
+                                div(class='swatch swatch-wood', id='teak')
+                                div(class='swatch swatch-wood', id='walnut')
+                            div(class='steel-swatches')
+                                h3.
+                                    Steel Finishes
+                                div(class='swatch swatch-steel', id='brushed-steel')
+                                div(class='swatch swatch-steel', id='chrome')
+                                div(class='swatch swatch-steel', id='gold')
+                        input(class='radio-btn', id='eh15-ottoman', type='radio', value='eh15-ottoman', name='eh15-ottoman')
+                        label(for='eh15-ottoman', id='labels-eh15-ottoman')
+                            span(class='radio-circ')
+                            span(class='label-text').
+                                eh15+ Ottoman
+                        input(class='input-text', id='eh15-quantity', type='text', value='1', name='eh15-quantity')
+                        label(for='eh15-quantity', id='labels-eh15-quantity')
+                            span(class='label-text').
+                                Quantity
+                        div(class='total')
+                            |(<span id="wood"></span> + <span id="steel"></span><span id="ottoman"></span>) x <span id="quantity"></span> = $<span id="price"></span>
+                        a(href='#eh15-shop')
+                            div(class='button', id='eh15-purchase').
+                                Add to Cart
+                div(class='down-arrow down-arrow-dark')
+                    a(href='#eh15-story').
+                        ▿
+            //- div(class='down-arrow')
+                a(class='scroll-click', href='#panel-3').
+                    ❭
+        div(id='eh15-story', class='center-panel three')
+            div(class='main-text')
+                div(class='description')
+                    h3.
+                        The Story
+                    p.
+                        eh15 was the result of an extensive study on the ergonomics of the human form in conjunction with influences by Danish furniture icons Arne Jacobson and Poul Kjærholm. Danish design became influential after members of our team were able to travel to Copenhagen and see first hand the importance of craft in manufacturing facilities. The complementary materiality of wood on metal evokes both natural and industrial qualities, a juxtaposition that will suit many design sensibilities. Our unique manufacturing process combines traditional practices of hand craft with modern technological machining in a highly specialized technique.
+
+                    p
+                        |To learn more about how your chair is made
+                        |<a href="#eh15-process">click here</a>.
+            div(class='down-arrow')
+                a(href='#eh15-process').
+                    ▿
+        div(id='eh15-process', class='center-panel four')
+             div(class='down-arrow down-arrow-manufacture')
+                a(href='#eh15-manufacture-1').
+                    ▿
+        div(id='eh15-manufacture-1', class='center-panel manufacture five')
+            div(class='content-feature')
+                div(class='feature feature-left')
+                div(class='feature feature-right')
+                    div(class='instructions')
+                        h3.
+                            1.
+                        p.
+                            Using 1/4" thick raw stainless steel, use a waterjet cutter to profile out the 5 ribs that the eh15 is comprised of.
+            div(class='down-arrow down-arrow-manufacture')
+                a(href='#eh15-manufacture-2').
+                    ▿
+        div(id='eh15-manufacture-2', class='center-panel manufacture six')
+            div(class='content-feature')
+                div(class='feature feature-left')
+                    div(class='instructions')
+                        h3.
+                            2.
+                        p.
+                            Each chair uses roughly 4' x 4' of material. Take the waste material from process one and melt it down in a heat furnace. This material can then be rolled out to make new sheets of stainless steel for future chairs.
+                div(class='feature feature-right')
+            div(class='down-arrow down-arrow-manufacture')
+                a(href='#eh15-manufacture-3').
+                    ▿
+        div(id='eh15-manufacture-3', class='center-panel manufacture seven')
+            div(class='content-feature')
+                div(class='feature feature-left')
+                div(class='feature feature-right')
+                    div(class='instructions')
+                        h3.
+                            3.
+                        p.
+                            Apply finishing material to the raw stainless steel. Weld the 5 frames together using stainless steel spacers at the base of each end and at the seat. Polish the welded joints.
+            div(class='down-arrow down-arrow-manufacture')
+                a(href='#eh15-manufacture-4').
+                    ▿
+        div(id='eh15-manufacture-4', class='center-panel manufacture eight')
+            div(class='content-feature')
+                div(class='feature feature-left')
+                    div(class='instructions')
+                        h3.
+                            4.
+                        p.
+                            Use a CNC router to profile out the surfaces for the back of the chair and the seat. Each chair is comprised of one 1/4" cut of wood 2' x 8' in dimension.
+                div(class='feature feature-right')
+            div(class='down-arrow down-arrow-manufacture')
+                a(href='#eh15-manufacture-5').
+                    ▿
+        div(id='eh15-manufacture-5', class='center-panel manufacture nine')
+            div(class='content-feature')
+                div(class='feature feature-left')
+                div(class='feature feature-right')
+                    div(class='instructions')
+                        h3.
+                            5.
+                        p.
+                            Use a robotic steam bender to form the wood onto the stainless steel frame.
+            div(class='down-arrow down-arrow-manufacture')
+                a(href='#eh15-manufacture-6').
+                    ▿
+        div(id='eh15-manufacture-6', class='center-panel manufacture ten')
+            div(class='content-feature')
+                div(class='feature feature-left')
+                    div(class='instructions')
+                        h3.
+                            6.
+                        p.
+                            Fasten the wood seam together with wood glue at the top of the chair. Hand sand entire wood surface and apply finish to seal for longevity. Fasten the wood to the metal frame with screws near the base of the chair on both ends. Apply an epoxy to adhere the wood along the curves of the frames.
+                div(class='feature feature-right')
+        //- div(id='eh15-process', class='center-panel four')
+        //-     div(class='center-text')
+        //-         div(class='main-text').
+        //-             Even More Info
